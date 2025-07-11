@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: #fff;
+        }
+        body,html{
+            height: 100%;
+            width: 100%;
+            background: rgb(50, 50, 193);
+        }
+        .container{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background: #dadada;
+            height: 300px;
+            width: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 20px; 
+            padding: 20px;
+            border-radius: 10px;
+        }
+        
+        .user-info i{
+            color: rgb(50, 50, 193);
+            font-size: 35px;
+            margin-right: 10px; 
+        }
+        
+        .user-info{
+            display: flex;
+            align-items: center;
+        }
+
+        span{
+            font-size: 20px;
+            color: black;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: rgb(50, 50, 193);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: rgb(30, 30, 160);
+        }
+        button:active{
+            transform: scale(0.9);
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="user-info">
+            <i class="fas fa-user"></i><span id="user">Generating user...</span>
+            
+        </div>
+        <div class="user-info">
+            <i class="fas fa-envelope"></i><span id="email">Generating email...</span>
+        </div>
+        <div class="user-info">
+            <i class="fas fa-genderless"></i><span id="gender">Generating gender...</span>
+        </div>
+        <button onclick="fetchData()">Generate user</button>
+    </div>
+    
+<!-- <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> -->
+    <script src="script.js"></script>
+    
+</body>
+</html>
