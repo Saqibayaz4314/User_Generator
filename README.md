@@ -19,4 +19,4 @@ This project is a **Random User Generator** web application built using **JavaSc
 
 1. Clone this repository to your local machine:
    ```bash
-   git clone https://github.com/saqibayaz4314/User_Generator.git
+   git clone https://github.com/Saqibayaz4314/User_Generator.git
